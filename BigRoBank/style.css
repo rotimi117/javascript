@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.banner{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/brb1.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 20%;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition:0.5s ;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: whitesmoke;
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid pink;
+    background: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: black;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+main{
+    margin: 20px auto;
+    max-width: 250px;
+    padding: 200px;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    box-shadow:  pink;
+}
+main h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+main form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+main form input[type="text"],
+main form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+main form button {
+    padding: 10px 15px;
+    background-color: pink;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+main form button:hover {
+    background-color: palevioletred;
+}
+.transfermain{
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+.transfermain form label{
+    display: -webkit-box;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.transfermain form input[type="text"],
+.transfermain form input[type="number"]{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.transfermain form button{
+    padding: 10px 15px;
+    background-color: pink;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.transfermain form button:hover{
+    background-color: black;
+}
+.aboutus{
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.aboutus h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.aboutus p{
+    margin-bottom: 15px;
+}

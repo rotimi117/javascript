@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="/BigRoBank/style.css">
+    <script>
+        function handleDeposit(){
+            const accountNumber = document.getElementById("account").value;
+            const amount = document.getElementById("amount").value;
+
+            if (accountNumber && amount){
+                const message = "Depositing $(amount) into account $(accountNumber)";
+                alert(message);
+            }else{
+                alert("Please fill in both account number and amount.");
+
+            }
+        }
+    </script>
+</head>
+<body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="/BigRoBank/images/BRBLOGO.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="transfer.html">Transfer</a></li>
+                    <li><a href="withdraw.html">Withdraw</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <main>
+                    <h2>Deposit Form</h2>
+                    <form action="process_deposit.php" method="post">
+                        <label for="account">Account Number:</label>
+                        <input type="text" id="account" name="account" required><br>
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" min="1" step="any" required><br>
+        
+                        <button type="submit" onclick="handleDeposit()"><span></span>Deposit</button>
+                    </form>
+                </main>
+                <footer>
+                    <p>scopy: 2023 Your Company. All rights resevered.</p>
+                </footer>
+            </div>
+        </div>
+        
+    
+
+</body>
+</html>

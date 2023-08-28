@@ -1,0 +1,59 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bank - Home</title>
+    <link rel="stylesheet" href="/Account/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/Account/images/BRBLOGO.png" alt="Bank Logo">
+        </div>
+        
+    </header>
+    
+    <section class="hero">
+        <!-- <div class="hero-content">
+            <h1>Welcome to Your Bank</h1>
+            <p>Your Trusted Partner in Financial Services</p>
+        </div> -->
+    </section>
+    
+    <section class="login-signup">
+        <div class="login">
+            <h2>Login to Your Account</h2>
+            <form action="login.php" method="post">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        
+        <div class="signup">
+            <h2>Create a New Account</h2>
+            <form action="signup.php" method="post">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+                
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+
+                <label for="signupPassword"> Confirm Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Your Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

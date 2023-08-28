@@ -1,0 +1,13 @@
+const data = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+const startRow = 1;
+const endRow = 2;
+const startCol = 0;
+const endCol = 2;
+
+const subset = data.slice(startRow,endRow).map(row => row.slice(startCol,endCol));
+console.log(subset);

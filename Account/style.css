@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.banner{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/transfer4.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 20%;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition:0.5s ;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.transfermain{
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 30px;
+    background-color: rgba(172, 165, 165, 0.342);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(rgba(212, 18, 76, 0), green, blue, alpha);
+}
+.transfermain form label{
+    display: grid;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-bottom: 10px;
+    color: pink;
+}
+.transfermain form input[type="text"],
+.transfermain form input[type="number"]{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.transfermain form button{
+    padding: 10px 15px;
+    background-color: pink;
+    font-size: larger;
+    font-style: normal;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.transfermain form button:hover{
+    background-color: grey;
+}
+label[for="bank"] {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #333;
+}
+#bank {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 10px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style the options within the select element */
+#bank option {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style the selected option */
+#bank option:checked {
+    background-color: #f9f9f9;
+}
+
+/* Style the disabled option */
+#bank option[disabled] {
+    color: #ccc;
+}
